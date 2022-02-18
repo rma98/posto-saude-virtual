@@ -8,7 +8,7 @@ dos postos , data de Consulta, medicamento disponível, além de observações s
 de serviços da aplicação. Em relação aos cidadãos, estes devem poder acessar aos serviços da
 rede municipal de saúde diretamente pelo seu email pessoal ou diretamente do seu celular.
 O sistema estará disponível para celulares (iOS e Android) e tablets. Por fim, será possível que
-os cidadãos e profissionais enviem mensagens e feedbacks uns para os outros.&quot;
+os cidadãos e profissionais enviem mensagens e feedbacks uns para os outros.
 
 # Principais Telas
 
