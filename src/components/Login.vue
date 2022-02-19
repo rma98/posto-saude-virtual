@@ -1,7 +1,5 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>  
-  </div>
+  
 
   <nav class="navbar navbar-light">
   <div class="container-fluid">
@@ -26,7 +24,10 @@
 
                 <div class="card-header">
 
-                    <h2>Login</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="white"  class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg>
 
                 </div>
 
@@ -51,7 +52,9 @@
 
                     </div>
                     <div class= "rede">
-                      Se preferir, entre com outra rede:
+                      <p>Se preferir, entre com outra rede:</P>
+                       <img class="iconeRedes" src="../assets/iconeGoogle.png" >
+                       <img class="iconeRedes" src="../assets/icone-circular-facebook.png" >
 
                     </div>
 
@@ -118,41 +121,29 @@ body {
 
     background-color: #00008B;
 
-    padding: 40px;
+    position: absolute;
+    top: 22%;
+    left: 21%;
+
+    padding: 60px;
 
     border-radius: 2px;
+    border-radius: 50px 50px 50px 50px;
 
-    width:280px;
-
-}
-
-.card-header {
-
-    padding-bottom: 50px;
-
-    opacity: 0.8;
-
-    color: #fff;
+    width:800px;
 
 }
 
-.card-header::after {
-
-    content: "";
-
-    width: 70px;
-
-    height: 1px;
-
-    background-color: #fff;
-
-    display: block;
-
-    margin-top: -17px;
-
-    margin-left: -5px;
+.card-header{
+  position: absolute;
+  top:2%;
+  left: 45%;
 
 }
+
+
+
+
 
 .card-content label {
 
@@ -192,21 +183,17 @@ body {
 
 }
 
-.card-footer {
 
-    display: flex;
-
-    flex-direction: column;
-
-}
 
 .card-footer .submit{
-
-    width: 100%;
-
+    position:absolute;
+    width: 15%;
+    right: 10%;
     height: 40px;
 
     background-color: #00BFFF;
+    border-radius: 10px 10px 10px 10px;
+
 
     border:none;
 
@@ -231,6 +218,10 @@ body {
 }
 .rede{
   color:white;
+}
+
+.iconeRedes{
+  width: 5%;
 }
 
 
