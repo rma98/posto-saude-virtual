@@ -3,8 +3,8 @@
 
   <nav class="navbar navbar-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+    <a class="navbar-brand">
+      <img class="logo" src="../assets/logoLogin.jpg" >
       Posto Saúde Virtual
     </a>
   </div>
@@ -12,8 +12,15 @@
 
 
 <nav class="nav">
-  <a class="nav-link active" aria-current="page" href="#"> Inicio >  </a>
-  <a class="nav-link" href="#"> Cadastrar</a>
+  <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
+  <a class="nav-link" > > </a>
+  <a class="nav-link" href="#"> Login</a>
+</nav>
+
+  <div>
+  <img class="atendente" src="../assets/atendente.jpg" >
+  <h1 class= "meg">Logar neste site</h1>
+  </div>
 
 
 
@@ -64,6 +71,7 @@
 
 
                     <input type="submit" value="Entrar" class="submit">
+                    <img class="seta" src="../assets/seta.png" href="#">
 
                    
 
@@ -73,7 +81,7 @@
 
         </div>
  
-</nav>
+
 </template>
 
 <script>
@@ -122,7 +130,7 @@ body {
     background-color: #00008B;
 
     position: absolute;
-    top: 22%;
+    top: 30%;
     left: 21%;
 
     padding: 60px;
@@ -131,6 +139,22 @@ body {
     border-radius: 50px 50px 50px 50px;
 
     width:800px;
+
+}
+.meg{
+    background-color: #00008B;
+
+    position: absolute;
+    top: 22%;
+    left: 6%;
+
+    padding: 5px;
+    border-radius: 50px 50px 50px 50px;
+
+    width:150px;
+    font-size: 13px;
+    color:white;
+    text-align:center;
 
 }
 
@@ -224,5 +248,25 @@ body {
   width: 5%;
 }
 
+.logo{
+  width:19%;
+  border-radius: 30px 30px 30px 30px;
+
+}
+.seta{
+ 
+  position:absolute;
+  width:4%;
+  bottom:5%;
+  left:7%;
+  border-radius: 90px 90px 90px 90px;
+}
+.atendente{
+
+  position:absolute;
+  left:1%;
+  width:3%;
+  border-radius: 50px 50px 50px 50px;
+}
 
 </style>
