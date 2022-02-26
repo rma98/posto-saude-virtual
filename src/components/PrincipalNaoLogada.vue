@@ -1,21 +1,12 @@
 <template>
-<div style="display:inline-block;vertical-align:top;">
-  <img class="logo" src="../assets/logoLogin.jpg">
-</div>
-<div style="display:inline-block;">
-  <h1 id="titulo">
-    Posto Saúde Virtual
-  </h1>
-</div>
-<div>
   <nav class="navbar navbar-light">
-    <div class="container-fluid">
-        <a class="navbar-brand"> 
-          Medicos 
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img class="logo" src="../assets/logoLogin.jpg" >
+          Posto Saúde Virtual
         </a>
-    </div>
+      </div>
   </nav>
-</div>  
 </template>
 <script>
 export default {

@@ -1,87 +1,58 @@
 <template>
-  
-
   <nav class="navbar navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand">
-      <img class="logo" src="../assets/logoLogin.jpg" >
-      Posto Saúde Virtual
-    </a>
-  </div>
-</nav>
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img class="logo" src="../assets/logoLogin.jpg" >
+        Posto Saúde Virtual
+      </a>
+    </div>
+  </nav>
 
-
-<nav class="nav">
-  <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
-  <a class="nav-link" > > </a>
-  <a class="nav-link" href="#"> Login</a>
-</nav>
+  <nav class="nav">
+    <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
+    <a id="set" class="nav-link"> > </a>
+    <a class="nav-link" href="#"> Login</a>
+  </nav>
 
   <div>
-  <img class="atendente" src="../assets/atendente.jpg" >
-  <h1 class= "meg">Logar neste site</h1>
+    <img class="atendente" src="../assets/atendente.jpg" >
+    <h1 class= "meg">Logar neste site</h1>
   </div>
 
+  <div id="login">
+    <form class="card">
+      <div class="card-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="white"  class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+      </div>
 
-
- 
-        <div id="login">
-
-            <form class="card">
-
-                <div class="card-header">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="white"  class="bi bi-person-circle" viewBox="0 0 16 16">
-  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-</svg>
-
-                </div>
-
-                <div class="card-content">
-
-                    <div class="card-content-area">
-
-                        <label for="usuario">Email</label>
-
-                        <input type="text" id="usuario" autocomplete="off">
-
-                    </div>
-
-                    <div class="card-content-area">
-
-                        <label for="password">Senha</label>
-
-                        <input type="password" id="password" autocomplete="off">
-
-                        <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-
-
-                    </div>
-                    <div class= "rede">
-                      <p>Se preferir, entre com outra rede:</P>
-                       <img class="iconeRedes" src="../assets/iconeGoogle.png" >
-                       <img class="iconeRedes" src="../assets/icone-circular-facebook.png" >
-
-                    </div>
-
-                </div>
-
-                <div class="card-footer">
-
-
-                    <input type="submit" value="Entrar" class="submit">
-                    <img class="seta" src="../assets/seta.png" href="#">
-
-                   
-
-                </div>
-
-            </form>
-
+      <div class="card-content">
+        <div class="card-content-area">
+          <label for="usuario">Email</label>
+          <input type="text" id="usuario" autocomplete="off">
         </div>
- 
 
+        <div class="card-content-area">
+          <label for="password">Senha</label>
+          <input type="password" id="password" autocomplete="off">
+          <a id="senha" href="#" class="recuperar_senha">Esqueceu a senha?</a>
+        </div>
+
+        <div class= "rede">
+          <p>Se preferir, entre com outra rede:</P>
+          <img class="iconeRedes" src="../assets/iconeGoogle.png" >
+          <img class="iconeRedes" src="../assets/icone-circular-facebook.png" >
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <input type="submit" value="Entrar" class="submit">
+        <img class="seta" src="../assets/seta.png" href="#">
+      </div>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -97,149 +68,109 @@ export default {
 .navbar{
   background-color:#00008B;
 }
+
 .navbar-brand{
   color:white;
 }
 
+.nav-link {
+  color: #051775;
+}
+
+#set {
+  color: #66C4F9;
+}
+
 body {
-
     padding: 0;
-
     margin: 0;
-
     background-color: #454d6b;
-
 }
 
 #login {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     height: 100vh;
-
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+#senha {
+  color: #ffffff;
+  text-decoration: none
 }
 
 .card {
-
     background-color: #00008B;
-
     position: absolute;
     top: 30%;
     left: 21%;
-
     padding: 60px;
-
     border-radius: 2px;
     border-radius: 50px 50px 50px 50px;
-
     width:800px;
-
 }
+
 .meg{
     background-color: #00008B;
-
     position: absolute;
     top: 22%;
     left: 6%;
-
     padding: 5px;
     border-radius: 50px 50px 50px 50px;
-
     width:150px;
     font-size: 13px;
     color:white;
     text-align:center;
-
 }
-
 .card-header{
   position: absolute;
   top:2%;
   left: 45%;
-
 }
 
-
-
-
-
 .card-content label {
-
     color: #fff;
-
     font-size: 12px;
-
     opacity: 0.8;
-
 }
 
 .card-content-area {
-
     display: flex;
-
     flex-direction: column;
-
     padding:10px 0;
-
 }
 
 .card-content-area input {
-
     margin-top: 10px;
-
     padding:0 5px;
-
     background-color: transparent;
-
     border:none;
-
     border-bottom: 1px solid #e1e1e1;
-
     outline: none;
-
     color: #fff;
-
 }
-
-
 
 .card-footer .submit{
     position:absolute;
     width: 15%;
     right: 10%;
     height: 40px;
-
     background-color: #00BFFF;
     border-radius: 10px 10px 10px 10px;
-
-
     border:none;
-
     color:#e1e1e1;
-
     margin: 10px 0;
-
 }
 
 .card-footer a {
-
     text-align: center;
-
     font-size: 12px;
-
     opacity: 0.8;
-
     color: #fff;
-
     text-decoration: none;
-
 }
+
 .rede{
   color:white;
 }
@@ -253,20 +184,19 @@ body {
   border-radius: 30px 30px 30px 30px;
 
 }
-.seta{
- 
+
+.seta{ 
   position:absolute;
   width:4%;
   bottom:5%;
   left:7%;
   border-radius: 90px 90px 90px 90px;
 }
-.atendente{
 
+.atendente{
   position:absolute;
   left:1%;
   width:3%;
   border-radius: 50px 50px 50px 50px;
 }
-
 </style>
