@@ -1,60 +1,107 @@
 <template>
-  <nav class="navbar">
+
+  <div class="corpo">
+    <form class="form-header" action="#">
+      <header>
+        <img class="logo" src="../assets/logoLogin.jpg">
+        <h1>Posto Saúde Virtual</h1>
+      </header>
+    </form>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand">
-          <img class="logo" src="../assets/logoLogin.jpg" >
-          <Strong>Posto Saúde Virtual</Strong>
-        </a>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><h2>Ínicio</h2></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h2>Médicos</h2></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><h5>Dra. Izabella Tabosa</h5></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><h5>Dr. Fabrício Torres</h5></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><h5>Dr. Luiz</h5></a></li>
+                <li><a class="dropdown-item" href="#"><h5>...</h5></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h2>Serviços</h2></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><h5>Pré Natal</h5></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><h5>Aplicações de Vacinas</h5></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><h5>Prevenção na saúde da mulher</h5></a></li>
+                <li><a class="dropdown-item" href="#"><h5>...</h5></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <h2>Postos</h2></a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><h5>Zenobio de Melo</h5></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><h5>Santa Rosa</h5></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><h5>Santa Luzia</h5></a></li>
+                <li><a class="dropdown-item" href="#"><h5>...</h5></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="#" class="form-search">
+            <input type="search" aria-label="Search" required>
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <a class="nav-link" href="#"><h2>Login</h2></a>
+          <a class="nav-link" href="#"><h2>Cadastrar</h2></a>
+        </div>
       </div>
-  </nav>
+    </nav>
 
-  <nav class="navbar" id="menu">
-    <div class="container-fluid">
-      <nav class="nav">
-        <a class="nav-link active" aria-current="page" href="#"> <h4 id="top-um"><strong>Médicos</strong></h4></a>
-        <a class="nav-link" href="#"> <h4><strong>Serviços</strong></h4></a>
-        <a class="nav-link" href="#"> <h4><strong>Postos</strong></h4></a>
-        <a class="nav-link" href="#"> 
-            <form action="#">
-              <input type="text" name="search" id="search" required>
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </a>
-        <a class="nav-link" href="#"> <h4 id="top-cinco"><strong>Login</strong></h4></a>
-        <a class="nav-link" href="#"> <h4><strong>Cadastrar</strong></h4></a>
-      </nav>
-    </div>
-  </nav>
-
-  <div>
-    <img id="foto" src="https://lh3.googleusercontent.com/pw/AM-JKLW4dIetVBt70rU8eXGka_SWoRzewI1ffHNzI_dUzKCal3EOi2dZfZma9jduYC_48VJjg0HSqqzSjGmqopPuM7syuzF5cVQUl5Je4kn2EBNWI_EXHplyMhf_bzbWDA4c6NxCyTFrjroZUj1e1WoHU5Gj8A=w1600-h884-no?authuser=0">
+    <form action="#" class="form-imagem">
+      <img id="foto" src="https://lh3.googleusercontent.com/pw/AM-JKLUxLBostROie65h4vWf_qr7Jx8wjtRwEguAbVTvx7-ENIu1D6yGohVc3UpFVeqKoLPOcENF1Jn4eXSwn3H3DtdXz28t0Up8jGIlpLmC8VwW0V1uR14EtWg80Qr076ap9-hdeZ6wEplvAljwh3ff_F22kg=w898-h243-no?authuser=0">
+    </form>
   </div>
 
   <div class="row">
-    <div class="col-3">
-      <div class="card" style="width: 18rem;">
-        <img id="card-um" src="https://lh3.googleusercontent.com/pw/AM-JKLUSfd3EZtDQKQfSlAvrvARcQMfXOR7FBKKchO6GCHSl24AICFZ6zufWgjVcvMudNvz0J5U57sTAy093PHAMR1cVbhOBO3azpbo8eHLx-ryx8pQ5F_h0y3cgSh02-8MuDf5GSmSSdp8hnx3pTg9L-tAvzg=s500-no?authuser=0" class="card-img-top">
+    <div class="col-4">
+      <div class="row">
+        <div class="col-6">
+          <div class="card" style="width: 12rem;">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLW70isdkU8LW0GxmC3qBERGbBDU6LI3kEdW4yMGTjbxS7VboYeWFJCdvDfGqwPFHKgIJ7SUzHWkewZfXOejl7obDnqOo3j6MArNp8hGW_qj52UjAPuoPSCMsSlUplPUEOLSGTaLpODPdS8vfwrRrcY1fw=s500-no?authuser=0">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="width: 12rem;">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLXxXcaOrJ-FCqn74jrIOm1Ouszr1oH0KThweh8xLWRdciY6MLlUSbhjdkrNm84nwUwVnl9th8bo9IdCV_r2xqY49EA0cgfbo-7l6YHapeJnGYR3Ac1XBAI_2yVs4dfrvBCR4sMTgTbYlEg3VWfX33eSqg=s500-no?authuser=0">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-3"> 
-      <div class="card" style="width: 18rem;">
-        <img id="card-dois" src="https://lh3.googleusercontent.com/pw/AM-JKLUVJ3weI3KK2eaikbLIaI3kfFKUYDzkmTNyHMdH45GGXMyahHZ_21iC8vr5BAoj3yJ0KLPz9LV_Zz6VyK4SGiuQTqNyX9fFXgeulucIFzX4I8CsvqBCWG5cZqxqZ88_85d8qUYya2X9BcNQdk9UGScy0w=s500-no?authuser=0" class="card-img-top">
+    <div class="col-4">
+      <div class="row">
+        <div class="col-6">
+          <div class="card" style="width: 12rem;">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLVE6v7dO6Jbh5Df8hvIqGY572dHEgDoyLPh7oB1YMsloOwWjFsXh81Y40F9wXLk3uSB7aBwSe-mGujRIxdYaMKIs2tusWLlXysY-4t9hSZPgfQ79OUC-kxixHWgYCPQrgYnxpX15wD3Q8_Qcarg2tbYaA=s500-no?authuser=0">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="width: 12rem;">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLUHJ9Bx-o5HXft0oUe8aeqO40W75f-nls2GbdgjkjPvuh5cxNrmHkknfRiL3njyFiegLfsaCz_oYj0p1qtcLrS0rgqHOTywD3QFZxwNaZsuZsuCK_37yqghu6sNRTdXiF4XAjsyiRDtDaVKh49c-JYp0Q=s500-no?authuser=0">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-3"> 
-      <div class="card" style="width: 18rem;">
-        <img id="card-tres" src="https://lh3.googleusercontent.com/pw/AM-JKLUUmAfhcJ_vOtwZlUMjneYuAils-OLPv1AouqrnQdn0KZydQq6DWTx0QS5E0VnTxIQZK673kh-x8xDp6vmsElxsWjP18fBQLx9IxCHPXObeeVcix5s8_DVc2J9f3E6jQHVV_J7zQVAEYjMq5We5vNIHvQ=s500-no?authuser=0" class="card-img-top">
-      </div>
-    </div>
-    <div class="col-3"> 
-      <div class="card" style="width: 18rem;">
-        <img id="card-quatro" src="https://lh3.googleusercontent.com/pw/AM-JKLUUmAfhcJ_vOtwZlUMjneYuAils-OLPv1AouqrnQdn0KZydQq6DWTx0QS5E0VnTxIQZK673kh-x8xDp6vmsElxsWjP18fBQLx9IxCHPXObeeVcix5s8_DVc2J9f3E6jQHVV_J7zQVAEYjMq5We5vNIHvQ=s500-no?authuser=0" class="card-img-top">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12"> 
-        <button><i class="fa-solid fa-angles-right"></i>Todas as funcionalidades</button>
-      </div>
+    <div class="col-4">
+      <button class="botao"><i class="fa-solid fa-angles-right"></i>Todas as funcionalidades</button>
     </div>
   </div>
 
@@ -69,96 +116,88 @@ export default {
 </script>
 
 <style scoped>
-
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #454d6b;
-}
-
-.navbar {
-  background-color:#ffffff;
-  padding: 0.2em;
-  margin: 0.5em;
-  margin-left: 4em;
-}
-
-#menu {
-  background-color:#051775;
-  width: 90vw;
-  height: 9vh;
-}
-
-.logo{
-  width:19%;
-  border-radius: 100px;
-}
-
-.navbar-brand{
-  color: #051775;
-}
-
-strong {
-  font-size: 20pt;
-  margin-left: 0.5em;
-}
-
-.nav-link {
-  color: #ffffff;
-}
-
-#top-um {
-  margin-left: 4em;
-}
-
-#top-cinco{
-  margin-left: 2em;
-}
-
-form {
-  border: 1px solid #ffffff;
-  border-radius: 0.3em;
-  padding: 0.3em;
-  width: 30vw;
-  height: 6vh;
-} 
-
- form input, form button {
-  font-size: 1em;
-  border-radius: 0.2em;
-  border: none;
-  padding: 0.2em;
-}
-
-form input {
-  width: 27vw;
-  background: none;
-  color: #ffffff;
-}
-
-form button {
-  background: none;
-  color: #ffffff;
-}
-
-#foto {
-  width: 91%;
-  margin-left: 4%;
   
-}
+  .corpo-form, .logo {
+  width: 6vw;
+  border-radius: 100px;
+  }
 
-.row {
-  margin-left: 1em;
-  padding: 2%;
-}
+  .form-header {
+    height: 15vh;
+    width: 32%;
+    padding: 0.5em;
+    margin-left: 7%;
+  }
 
-button {  
+  .form-header header {
+    display: flex;
+  }
+
+  .form-header header h1 {
+    color: #051775;
+    margin-top: 4%;
+    margin-left: 0.4em;
+  }
+
+  .navbar {
+    background-color: #051775;
+    padding: 0.3em;
+    margin: 0.3em;
+  }
+
+  .nav-item {
+    margin-left: 15%;
+  }
+
+  .nav-item h2 {
+    color: #ffffff;
+  }
+
+  .nav-link h2 {
+    color: #ffffff;
+  }
+
+  .form-search {
+    margin-right: 3%;
+    background: none;
+  }
+
+  .form-search input {
+    width: 20vw;
+    background: none;
+    color: #ffffff;
+    
+  }
+
+  .btn {
+    background: none;
+    color: #ffffff;
+    
+  }
+
+  .form-imagem {
+    height: 45vh;
+    padding: 0.3em;
+    margin: 0.3em;
+  }
+
+  .form-imagem img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .row {
+    padding: 0.3em;
+    margin: 0.3em;
+  }
+
+  .botao {  
   border-radius: 2em;
-  width: 15vw;
-  margin-left: 38%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  width: 14vw;
   background-color: #051775;
   color: #ffffff;
+  margin-top: 17%;
+
 }
+
 </style>
