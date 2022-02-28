@@ -105,6 +105,33 @@
     </div>
   </div>
 
+  <div class="rodape">
+    <footer class="rodape-footer">
+      <div class="row">
+        <div class="col-4">
+          <div class="contatos">
+            <h5>Contatos:</h5>
+            <h5><i class="fa-solid fa-envelope"></i>posto.saúdevirtual27palmares@gmail.com</h5>
+            <h5><i class="fa-solid fa-phone"></i>(81) 98349-6015</h5>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="contatos">
+            <h5>Conheça-nos</h5>
+            <h5><i class="fa-solid fa-location-dot"></i>Palmares, Cep: 55540-000</h5>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="contatos">
+            <h5>Redes Sociais:</h5>
+            <i class="fa-brands fa-instagram" id="instagram"></i><i class="fa-brands fa-twitter" id="twitter"></i><i class="fa-brands fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
 </template>
 <script>
 export default {
@@ -197,7 +224,23 @@ export default {
   background-color: #051775;
   color: #ffffff;
   margin-top: 17%;
+  }
 
-}
+  .rodape {
+    background-color: #051775;
+  }
+
+  .contatos {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #instagram {
+    margin-right: 15%;
+  }
+
+  #twitter {
+    margin-right: 15%;
+  }
 
 </style>
