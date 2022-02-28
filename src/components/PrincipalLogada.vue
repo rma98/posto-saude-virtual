@@ -60,7 +60,7 @@
             <input type="search" aria-label="Search" required>
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
-         <a class="nav-link" href="#"><h2>Bem-vindo(a)</h2></a> 
+         <a class="nav-link" href="#"><h2>Bem-vindo(a)</h2></a>
          <a class="nav-link" href="#"><h2>Sair</h2></a>
         </div>
       </div>
@@ -179,6 +179,7 @@ export default {
   .nav-item h2 {
     color: #ffffff;
   }
+ 
 
   .nav-link h2 {
     color: #fffefe;
