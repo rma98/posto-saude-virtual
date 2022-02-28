@@ -60,8 +60,7 @@
             <input type="search" aria-label="Search" required>
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
-         <a class="nav-link" href="#"><h2>Bem-vindo(a)</h2></a>
-         <a class="nav-link" href="#"><h2>Sair</h2></a>
+         <h5 class="nav-link" id="bemvindo">Bem-vindo(a) <br><button class="sair"><i class="fa-solid fa-right-from-bracket"></i>Sair</button></h5>
         </div>
       </div>
     </nav>
@@ -183,6 +182,17 @@ export default {
 
   .nav-link h2 {
     color: #fffefe;
+  }
+
+  #bemvindo {
+    color: #ffffff;
+    text-align: right;
+  }
+
+  .sair {
+    background: none;
+    color: #ffffff;
+    text-decoration: underline;
   }
 
   .form-search {
