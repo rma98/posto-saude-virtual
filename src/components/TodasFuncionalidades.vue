@@ -4,7 +4,7 @@
     <form class="form-header" action="#">
       <header>
         <img class="logo" src="../assets/logoLogin.jpg">
-        <h1>Posto Saúde Virtual</h1>
+        <h1>Todos os Serviços</h1>
       </header>
     </form>
     
@@ -60,18 +60,22 @@
             <input type="search" aria-label="Search" required>
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
-          <h2>Bem Vindo!!</h2>
+          <a class="nav-link" href="#"><h2>Login</h2></a>
+          <a class="nav-link" href="#"><h2>Cadastrar</h2></a>
         </div>
       </div>
     </nav>
+
     <nav class="nav">
-    <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
-    <a id="set" class="nav-link"> > </a>
-    <a class="nav-link" href="#"> Todas as funcionalidades</a>
+    <a class="nav-link active" aria-current="page" href="#"><h2 id="inicio">Inicio</h2> </a>
+    <h2 class="nav - link" id="set"><i class="fa-solid fa-chevron-right"></i></h2>
+    <a class="nav-link disabled" href="#"><h2 id="todasfuncionalidades">Todas as funcionalidades</h2></a>
   </nav>
+
    <form action="#" class="form-imagem">
       <img id="foto"  src="https://i.ibb.co/9y8M0tS/funcionalidades.jpg" >
     </form>
+
     <div class="row">
     <div class="col-4">
       <div class="row">
@@ -99,51 +103,68 @@
             <img src="https://lh3.googleusercontent.com/pw/AM-JKLUHJ9Bx-o5HXft0oUe8aeqO40W75f-nls2GbdgjkjPvuh5cxNrmHkknfRiL3njyFiegLfsaCz_oYj0p1qtcLrS0rgqHOTywD3QFZxwNaZsuZsuCK_37yqghu6sNRTdXiF4XAjsyiRDtDaVKh49c-JYp0Q=s500-no?authuser=0">
           </div>
         </div>
-        <div class="row">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row">
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src= "https://i.ibb.co/48CZYKQ/Requisitar-visitas-a-domicilio.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLWtCmYK2Ml-DCxB9-ZmOH3r_pfiLNa6UihRLaqAZFSYOAx0AGzd5XBu3MmWqdaazoYBj7LdKuwhA5td7DGW1V9yPr_MxCG8wCbQUB7M7NMKwJAe01sMs3VmixVyJaBNXP2zzA2fddU2D3m1eSxKbAzKdw=s500-no?authuser=0">
           </div>
         </div>
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src="https://i.ibb.co/yf5Jb40/localiza-o.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLVF022Jzn3J_5mTbFhA_cd0ngUakJw42wggjZGkuq3CLhZGYSg8H0iMNrZpqWkU1JzJzVyM3YjshoAntFl7FHeXojSiJuqPwMcZDOTCS5jIupJ_hbMFzWGc-LZlKB8pcsFSCjeT1k5Uw09nA9y1CIBdvQ=s500-no?authuser=0">
           </div>
         </div>
       </div>
-      </div>
-      <div class="col-6">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <div class="row">
+        <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src= "https://i.ibb.co/nQH50PM/se-o-de-pergunta.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLVzO63ewBBN7favhXC-7udsIaBVQdWQCoStG4IJQLof0v_ON3e-MlyaGCmo_PY1hFFDRektmWwHRjKIpi4Z6Y5K2N3MGWO8cRZgeuReA4B1Qyj7Had-uyMjkj1jVroyhNjIGNU1KBxD2VLl3OkX9R5PmA=s500-no?authuser=0">
           </div>
         </div>
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src="https://i.ibb.co/mGW6hYf/Chat-online.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLUu6WjR17NvjlkvBHBA-HW-qCrkiggc_1J7MHBZtSfZjoeAAwylZKlQrnCTB9Ezw19zZdXLQlXVWV6VK1jvUc-t6oPJVK4Ru4F-3rotB3vSETQZLvVFuSNkG458f8JpEMLyxatkDYSfJ9HOOJLAKHn9hg=s500-no?authuser=0">
           </div>
         </div>
       </div>
-      </div>
-            <div class="col-6">
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src= "https://i.ibb.co/MhYvTGt/Fazer-a-sicroniza-o-dos-sus.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLVMugkELWbjE8Oq7pyMHpG-dZVB6WewR79A9_KlosoIEjEWqITSCkHiif9tQydOkc4oXtZKfys090EybBwkc3U3oiXszdtulqe3T4GXVfE2EnPErqoCkKd2a-PqRU6q15iNEzO6Ere3bpb7Uii5jT84MA=s500-no?authuser=0">
           </div>
         </div>
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src="https://i.ibb.co/gMkpn6N/gerar-declar-o.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLWhPRsvYDB-XpuNF0c04UM_S7n-rKw7juTD3nZLMiM5h7d-oI6ZOm-ZnnfwOkQJTQSVp4cEwfa45QzFrjioVyqakEKPXBQVm64CRpcCjBjBrIk7h3kS9Fc3XlQz1tOAVuP5aYZcGRCLXPpNKgP_M306tg=s500-no?authuser=0">
           </div>
         </div>
-          <div class="col-6">
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src= "https://i.ibb.co/SK9sSbV/Formularios-online.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLVGg-_bRoiCGami6xz8-y_lCh2k0BKLjcJERMbIetphn_2RMWJP1hyzAignluNdQD5HjRpcEecAZ0BxAT1Hu_eBZAFshuOOhywxx9n-JofPp0MKiZN9T7-BbVWBeiWiJaFHZzH5Kydk7hboU2jW3mnPKQ=s500-no?authuser=0">
           </div>
         </div>
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src="https://i.ibb.co/FDkkVWX/Visualizar-agenda-dps-proficionais-de-sa-de.png">
+            <img src="https://lh3.googleusercontent.com/pw/AM-JKLV3r-i6BGt0Z3EiOAMXUX_aGMEuRZxFU6sQXdFwKF95k3kI1LroHLhz0Gl6aNBvJQCFO7ahp5b1tGg1KWEwuoG-v2SCFsV2teG4JoNLJ_RD7w3jnzMmrJvCg2asFdfJpttHHFFrDBufqJFi2bnp_SL74w=s500-no?authuser=0">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
         
   <div class="rodape">
     <footer class="rodape-footer">
@@ -222,6 +243,19 @@ export default {
 
   .nav-link h2 {
     color: #ffffff;
+  }
+
+  #inicio{
+    color: #051775;
+  }
+
+  #set {
+    color: #66C4F9;
+    margin-top: 1%;
+  }
+
+  #todasfuncionalidades {
+    color: #051775;
   }
 
   .form-search {
