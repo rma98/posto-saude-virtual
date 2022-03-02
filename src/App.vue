@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/TodasFuncionalidadesLogada.vue'
+import HelloWorld from './components/Login.vue'
 
 export default {
   name: 'App',

@@ -1,22 +1,35 @@
 <template>
-  <nav class="navbar navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">
-        <img class="logo" src="../assets/logoLogin.jpg" >
-        Posto Saúde Virtual
-      </a>
+  
+  <div class="cabeçalho">
+    <form class="form-header" action="#">
+      <header>
+        <img class="logo" src="../assets/logoLogin.jpg">
+        <h1>Posto Saúde Virtual</h1>
+      </header>
+    </form>
+  </div>
+
+  <div class="menu">
+    <div class="row" id="nav-menu">
+      <nav class="navbar">
+        <a class="nav-link active menu-a" href="#"><h2>Início</h2></a>
+        <a class="nav-link" id="seta" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+        <a class="nav-link disabled menu-a" href="#"><h2>Login</h2></a>
+      </nav>
     </div>
-  </nav>
+  </div>
 
-  <nav class="nav">
-    <a class="nav-link active" aria-current="page" href="#"> Inicio </a>
-    <a id="set" class="nav-link"> > </a>
-    <a class="nav-link" href="#"> Login</a>
-  </nav>
-
-  <div>
-    <img class="atendente" src="../assets/atendente.jpg" >
-    <h1 class= "meg">Logar neste site</h1>
+  <div class="atendente">
+    <div class="row" id="img-atendente">
+      <form class="form-img" action="#">
+        <header>
+          <img class="logo" src="../assets/atendente.jpg">
+            <div class="row" id="atendente-h2">
+              <h2>Logar neste site</h2>
+            </div>
+        </header>
+      </form>
+    </div>
   </div>
 
   <div id="login">
@@ -65,28 +78,71 @@ export default {
 </script>
 
 <style scoped>
-.navbar{
-  background-color:#00008B;
-}
 
-.navbar-brand{
-  color:white;
-}
+  .cabeçalho {
+    background-color: #051775;
+  }
 
-.nav-link {
-  color: #051775;
-}
+  .form-header {
+    height: 15vh;
+    width: 32%;
+    padding: 0.5em;
+    margin-left: 7%;
+  }
 
-#set {
-  color: #66C4F9;
-}
+   .logo {
+    width: 6vw;
+    border-radius: 100px;
+  }
+
+  .form-header header {
+    display: flex;
+  }
+
+  .form-header header h1 {
+    color: #ffffff;
+    margin-top: 4%;
+    margin-left: 0.4em;
+  }
+
+  #nav-menu {
+    width: 32vw;
+    height: 15vh;
+    margin-left: 7%;
+  }
+
+  .menu-a {
+    color: #051775;
+  }
+
+  #seta {
+    color: #66C4F9;
+  }
+
+  #img-atendente {
+    height: 15vh;
+    width: 25vw;
+    margin-left: 0.5em;
+  }
+
+  #atendente-h2 {
+    margin-left: 3%;
+    background-color: #051775;
+    color: #ffffff;
+    margin-top: 0.5em;
+    height: 6vh;
+    border-radius: 50px 50px 50px 50px;
+  }
+
+  .form-img header {
+    display: flex;
+  }
 
 body {
     padding: 0;
     margin: 0;
     background-color: #454d6b;
 }
-
 #login {
     display: flex;
     align-items: center;
@@ -94,95 +150,69 @@ body {
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 #senha {
   color: #ffffff;
   text-decoration: none
 }
-
 .card {
-    background-color: #00008B;
+    background-color: #051775;
     position: absolute;
-    top: 30%;
-    left: 21%;
-    padding: 60px;
+    top: 40%;
+    padding: 8%;
     border-radius: 2px;
     border-radius: 50px 50px 50px 50px;
-    width:800px;
+    width: 70vw;
+    height: 73vh;
 }
 
-.meg{
-    background-color: #00008B;
-    position: absolute;
-    top: 22%;
-    left: 6%;
-    padding: 5px;
-    border-radius: 50px 50px 50px 50px;
-    width:150px;
-    font-size: 13px;
-    color:white;
-    text-align:center;
-}
 .card-header{
   position: absolute;
   top:2%;
+  background: none;
   left: 45%;
 }
-
 .card-content label {
-    color: #fff;
-    font-size: 12px;
+    color: #ffffff;
+    font-size: 18pt;
     opacity: 0.8;
 }
-
 .card-content-area {
     display: flex;
     flex-direction: column;
     padding:10px 0;
 }
-
 .card-content-area input {
     margin-top: 10px;
     padding:0 5px;
     background-color: transparent;
     border:none;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #ffffff;
     outline: none;
-    color: #fff;
+    color: #ffffff;
 }
-
 .card-footer .submit{
     position:absolute;
     width: 15%;
     right: 10%;
     height: 40px;
-    background-color: #00BFFF;
+    background-color: #66C4F9;
     border-radius: 10px 10px 10px 10px;
     border:none;
-    color:#e1e1e1;
+    color:#ffffff;
     margin: 10px 0;
 }
-
 .card-footer a {
     text-align: center;
     font-size: 12px;
     opacity: 0.8;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
-
 .rede{
-  color:white;
+  color: #ffffff; 
 }
-
 .iconeRedes{
   width: 5%;
-}
-
-.logo{
-  width:19%;
-  border-radius: 30px 30px 30px 30px;
-
 }
 
 .seta{ 
@@ -193,10 +223,4 @@ body {
   border-radius: 90px 90px 90px 90px;
 }
 
-.atendente{
-  position:absolute;
-  left:1%;
-  width:3%;
-  border-radius: 50px 50px 50px 50px;
-}
 </style>
