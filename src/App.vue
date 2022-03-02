@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/Cadastro.vue'
+import HelloWorld from './components/AgendarConsulta.vue'
 
 export default {
   name: 'App',
