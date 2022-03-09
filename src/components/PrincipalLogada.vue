@@ -134,7 +134,7 @@
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'principalLogada',
   props: {
     msg: String
   }

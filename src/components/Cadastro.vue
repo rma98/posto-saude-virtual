@@ -74,7 +74,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'cadastro',
   props: {
     msg: String
   }

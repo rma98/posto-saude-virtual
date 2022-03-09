@@ -195,7 +195,7 @@
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'todasFuncionalidadesLogada',
   props: {
     msg: String
   }
