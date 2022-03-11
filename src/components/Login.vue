@@ -70,7 +70,7 @@
 
 <script>
 export default {
-  name: 'login',
+  name: 'LoginItem',
   props: {
     msg: String
   }
