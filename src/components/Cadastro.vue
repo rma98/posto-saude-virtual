@@ -74,7 +74,7 @@
 
 <script>
 export default {
-  name: 'cadastro',
+  name: 'CadastroItem',
   props: {
     msg: String
   }
