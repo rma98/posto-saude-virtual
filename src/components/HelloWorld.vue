@@ -10,7 +10,7 @@
 </nav>
 
 <nav class="nav">
-  <a class="nav-link active" aria-current="page" href="#"><h2>Início</h2></a>
+  <a class="nav-link active" aria-current="page" href="/"><h2>Início</h2></a>
   <a class="nav-link" id="seta" href="#"><i class="fa-solid fa-chevron-right"></i></a>
   <a class="nav-link" href="#"><h2>Login</h2></a>
 
@@ -156,7 +156,7 @@ export default{
     #telaLogin{
         width: 70vw;
         position: absolute;
-        top: 90%;
+        top: 80%;
         left: 50%;
         background-color: #051775;
         transform: translate(-50%,-50%);
