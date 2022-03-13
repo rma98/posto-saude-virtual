@@ -60,7 +60,8 @@
             <input type="search" aria-label="Search" required>
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
-         <h5 class="nav-link" id="bemvindo">Bem-vindo(a) <br><button class="sair"><i class="fa-solid fa-right-from-bracket"></i>Sair</button></h5>
+         <h5 class="nav-link" id="bemvindo">Bem-vindo(a) <br>
+         <button class="sair"><i class="fa-solid fa-right-from-bracket"></i>Sair</button></h5>
         </div>
       </div>
     </nav>

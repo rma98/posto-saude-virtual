@@ -61,7 +61,7 @@
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
           <a class="nav-link" href="teste"><h2>Login</h2></a>
-          <a class="nav-link" href="cadastro"><h2>Cadastrar</h2></a>
+          <a class="nav-link" href="testecadastro"><h2>Cadastrar</h2></a>
         </div>
       </div>
     </nav>
