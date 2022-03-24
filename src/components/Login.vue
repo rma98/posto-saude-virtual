@@ -1,4 +1,4 @@
-<template>
+    <template>
   
   <div class="cabeçalho">
     <form class="form-header" action="#">
@@ -41,15 +41,19 @@
         </svg>
       </div>
 
+      <div v-if = exibirAlerta class="alert alert-danger">
+          <strong>Erro!</strong><a> E-mail e/ou senha inválido(s)</a>.
+      </div>
+
       <div class="card-content">
         <div class="card-content-area">
           <label for="usuario">Email</label>
-          <input type="text" id="usuario" autocomplete="off">
+          <input type="text" id="usuario" autocomplete="off" v-model="email">
         </div>
 
         <div class="card-content-area">
           <label for="password">Senha</label>
-          <input type="password" id="password" autocomplete="off">
+          <input type="password" id="password" autocomplete="off" v-model="senha">
           <a id="senha" href="#" class="recuperar_senha">Esqueceu a senha?</a>
         </div>
 
@@ -60,21 +64,42 @@
         </div>
       </div>
 
-      <div class="card-footer">
-        <input type="submit" value="Entrar" class="submit">
-        <img class="seta" src="../assets/seta.png" href="#">
-      </div>
+        <div class="row">
+            <a v-on:click="login" class="btn btn-danger col-2 ">ENTRAR</a>
+        </div><br>
+              
+        <div class="voltar">
+            <router-link to= "../"><img class="seta" src="../assets/seta.png"></router-link>
+        </div>
     </form>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'LoginItem',
-  props: {
-    msg: String
-  }
+export default{
+    name: 'TesteItem',
+    data() {
+        return {
+            email:'',
+            senha:'',
+            exibirAlerta: false
+        }      
+      },
+      methods: {
+                login() {
+                    this.exibirAlerta = false;
+                    var emailAdmin = 'admin@gmail.com';
+                    var senhaAdmin = '123456';
+                    if (this.email === emailAdmin && this.senha === senhaAdmin) {
+                        this.$router.push({ name: 'principalLogada' });
+                    } else {
+                        this.exibirAlerta = true;
+                        this.senha = '';
+                    }
+                }
+      }
 }
+  
 </script>
 
 <style scoped>
@@ -214,13 +239,16 @@ body {
 .iconeRedes{
   width: 5%;
 }
-
-.seta{ 
-  position:absolute;
-  width:4%;
-  bottom:5%;
-  left:7%;
-  border-radius: 90px 90px 90px 90px;
+.voltar{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 4%;
 }
+.seta{
+    width:10%;
+    border-radius: 80px 80px 80px 80px;
+
+}
+
 
 </style>
