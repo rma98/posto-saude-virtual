@@ -12,7 +12,7 @@
   <div class="menu">
     <div class="row" id="nav-menu">
       <nav class="navbar">
-        <a class="nav-link active menu-a" href="#"><h2>Início</h2></a>
+        <a class="nav-link active menu-a" href="/"><h2>Início</h2></a>
         <a class="nav-link" id="seta" href="#"><i class="fa-solid fa-chevron-right"></i></a>
         <a class="nav-link disabled menu-a" href="#"><h2>Login</h2></a>
       </nav>

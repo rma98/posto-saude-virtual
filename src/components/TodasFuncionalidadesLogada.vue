@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><h2>Ínicio</h2></a>
+              <a class="nav-link active" aria-current="page" href="posto-saude"><h2>Ínicio</h2></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,7 +60,7 @@
             <input type="search" aria-label="Search" required>
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
-          <h5 class="nav-link" id="bemvindo">Bem-vindo(a) <br><button class="sair"><i class="fa-solid fa-right-from-bracket"></i>Sair</button></h5>
+          <h5 class="nav-link" id="bemvindo">Bem-vindo(a) <br><a class="sair" href="/"><i class="fa-solid fa-right-from-bracket"></i>Sair</a></h5>
         </div>
       </div>
     </nav>
@@ -80,7 +80,8 @@
       <div class="row">
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src="https://lh3.googleusercontent.com/pw/AM-JKLW70isdkU8LW0GxmC3qBERGbBDU6LI3kEdW4yMGTjbxS7VboYeWFJCdvDfGqwPFHKgIJ7SUzHWkewZfXOejl7obDnqOo3j6MArNp8hGW_qj52UjAPuoPSCMsSlUplPUEOLSGTaLpODPdS8vfwrRrcY1fw=s500-no?authuser=0">
+            <a class="card" href="agendamento"><img src="https://lh3.googleusercontent.com/pw/AM-JKLW70isdkU8LW0GxmC3qBERGbBDU6LI3kEdW4yMGTjbxS7VboYeWFJCdvDfGqwPFHKgIJ7SUzHWkewZfXOejl7obDnqOo3j6MArNp8hGW_qj52UjAPuoPSCMsSlUplPUEOLSGTaLpODPdS8vfwrRrcY1fw=s500-no?authuser=0">
+          </a>
           </div>
         </div>
         <div class="col-6">
