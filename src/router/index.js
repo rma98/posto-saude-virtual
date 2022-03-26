@@ -7,6 +7,8 @@ import todasFuncionalidades from '../components/TodasFuncionalidades.vue'
 import todasFuncionalidadesLogada from '../components/TodasFuncionalidadesLogada.vue'
 import TesteItem from '../components/HelloWorld.vue'
 import TesteCadastro from '../components/TesteCadastro.vue'
+import AgendarConsulta from '../components/AgendarConsulta.vue'
+
 
 
 
@@ -23,6 +25,7 @@ const routes = [
   { path: '/funcionalidades', name: 'todasFuncionalidadesLogada', component: todasFuncionalidadesLogada},
   { path: '/teste', name: 'teste', component: TesteItem},
   { path: '/testecadastro', name: 'teste2', component: TesteCadastro},
+  { path: '/agendamento', name: 'agendarCansulta', component: AgendarConsulta},
  
 ]
 

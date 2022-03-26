@@ -61,7 +61,7 @@
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
          <h5 class="nav-link" id="bemvindo">Bem-vindo(a) <br>
-         <button class="sair"><i class="fa-solid fa-right-from-bracket"></i>Sair</button></h5>
+         <a class="sair" href="/"><i class="fa-solid fa-right-from-bracket"></i>Sair</a></h5>
         </div>
       </div>
     </nav>
@@ -76,7 +76,8 @@
       <div class="row">
         <div class="col-6">
           <div class="card" style="width: 12rem;">
-            <img src="https://lh3.googleusercontent.com/pw/AM-JKLW70isdkU8LW0GxmC3qBERGbBDU6LI3kEdW4yMGTjbxS7VboYeWFJCdvDfGqwPFHKgIJ7SUzHWkewZfXOejl7obDnqOo3j6MArNp8hGW_qj52UjAPuoPSCMsSlUplPUEOLSGTaLpODPdS8vfwrRrcY1fw=s500-no?authuser=0">
+            <a class="card" href="agendamento"><img src="https://lh3.googleusercontent.com/pw/AM-JKLW70isdkU8LW0GxmC3qBERGbBDU6LI3kEdW4yMGTjbxS7VboYeWFJCdvDfGqwPFHKgIJ7SUzHWkewZfXOejl7obDnqOo3j6MArNp8hGW_qj52UjAPuoPSCMsSlUplPUEOLSGTaLpODPdS8vfwrRrcY1fw=s500-no?authuser=0">
+          </a>
           </div>
         </div>
         <div class="col-6">
@@ -101,7 +102,7 @@
       </div>
     </div>
     <div class="col-4">
-      <button class="botao"><i class="fa-solid fa-angles-right"></i>Todas as funcionalidades</button>
+      <a class="botao" href="funcionalidades"><i class="fa-solid fa-angles-right"></i>Todas as funcionalidades</a>
     </div>
   </div>
 
@@ -230,12 +231,15 @@ export default {
     margin: 0.3em;
   }
 
-  .botao {  
+  .botao { 
+  position: absolute; 
   border-radius: 2em;
-  width: 14vw;
+  width: 18vw;
   background-color: #051775;
   color: #ffffff;
-  margin-top: 17%;
+  margin-top: 5%;
+  text-decoration:none;
+  font-size: 25px; 
   }
 
   .rodape {

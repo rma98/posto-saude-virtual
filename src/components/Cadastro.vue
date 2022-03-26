@@ -43,19 +43,29 @@
       <div class="card-content">
         <div class="card-content-area">
           <label for="usuario">Nome</label>
-          <input type="text" id="usuario" autocomplete="off">
+          <input type="text" id="usuario" autocomplete="off" v-model="Nome">
         </div>
         <div class="card-content-area">
           <label for="usuario">Email</label>
-          <input type="text" id="usuario" autocomplete="off">
+          <input type="text" id="usuario" autocomplete="off" v-model="email">
         </div>
         <div class="card-content-area">
           <label for="password">Senha</label>
-          <input type="password" id="password" autocomplete="off">
+          <input type="password" id="password" autocomplete="off" v-model="senha">
         </div>
         <div class="card-content-area">
           <label for="password">Confirmação de senha</label>
-          <input type="password" id="password" autocomplete="off">
+          <input type="password" id="password" autocomplete="off" v-model="confirmar">
+
+           <span v-show="deuErro1" class="erro-senha"
+              ><i class="fa fa-times"></i>Nenhum dado cadastrado ou Dados
+              incopletos</span
+            >
+
+            <span v-show="deuErro" class="erro-senha"
+              ><i class="fa fa-times"></i>As senhas digitadas não conferem</span
+            >
+
         </div>
         <div class= "rede">
           <p>Se preferir, entre com outra rede:</P>
@@ -64,8 +74,16 @@
         </div>
       </div>
       <div class="card-footer">
-        <input type="submit" value="Cadastrar" class="submit">
-        <img class="seta" src="../assets/seta.png" href="#">
+        <button
+              :disabled="senha != confirmar"
+              v-on:click="Cadastrar"
+              class="btn btn-danger col-2"
+            >
+              CADASTRAR
+          </button>
+      </div>
+      <div class="voltar2">
+          <router-link to= "../"><img class="seta" src="../assets/seta.png"></router-link>
       </div>
     </form>
   </div>
@@ -74,11 +92,44 @@
 
 <script>
 export default {
-  name: 'CadastroItem',
-  props: {
-    msg: String
-  }
-}
+  name: "TesteCadastro",
+  data() {
+    return {
+      deuErro1: false,
+      deuErro: false,
+      Nome: "",
+      email: "",
+      senha: "",
+      confirmar: "",
+    };
+  },
+  methods: {
+    Cadastrar() {
+      if (
+        this.Nome == "" ||
+        this.Nome == " " ||
+        this.Nome < 3 ||
+        this.email == "" ||
+        this.email == " " ||
+        this.email < 3 ||
+        this.senha == "" ||
+        this.confirmar == ""
+      ) {
+        this.deuErro1 = true;
+        this.Nome = "";
+        this.email = "";
+        this.senha = "";
+        this.confirmar = "";
+      } else {
+        if (this.senha != this.confirmar) {
+          this.deuErro = true;
+        } else {
+          this.$router.push("login");
+        }
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -224,12 +275,14 @@ export default {
     width: 5%;
   }
 
-  .seta{
+  .voltar2{
     position:absolute;
-    width:4%;
-    bottom:5%;
-    left:7%;
+    width:35%;
+    bottom:15%;
+    left:15%;
     border-radius: 90px 90px 90px 90px;
   }
+
+  
 
 </style>

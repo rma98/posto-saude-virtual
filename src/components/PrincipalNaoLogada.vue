@@ -61,7 +61,7 @@
             <button class="btn" type="submit"><i class="fas fa-search"></i></button>
           </form>
           <a class="nav-link" href="login"><h2>Login</h2></a>
-          <a class="nav-link" href="testecadastro"><h2>Cadastrar</h2></a>
+          <a class="nav-link" href="cadastro"><h2>Cadastrar</h2></a>
         </div>
       </div>
     </nav>
@@ -100,9 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
-      <button class="botao"><i class="fa-solid fa-angles-right"></i>Todas as funcionalidades</button>
-    </div>
+
   </div>
 
   <div class="rodape">
