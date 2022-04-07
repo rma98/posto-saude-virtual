@@ -1,32 +1,37 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import principalNaoLogada from '../components/PrincipalNaoLogada.vue'
-import LoginItem from '../components/Login.vue'
-import CadastroItem from '../components/Cadastro.vue'
-import principalLogada from '../components/PrincipalLogada.vue'
-import todasFuncionalidades from '../components/TodasFuncionalidades.vue'
-import todasFuncionalidadesLogada from '../components/TodasFuncionalidadesLogada.vue'
-import TesteItem from '../components/HelloWorld.vue'
-import TesteCadastro from '../components/TesteCadastro.vue'
-import AgendarConsulta from '../components/AgendarConsulta.vue'
-
-
-
-
-
-
+import homePage from '../components/home.vue'
+import loginPage from '../components/login.vue'
+import cadastroPage from '../components/cadastro.vue'
+import funcionalidadesPage from '../components/funcionalidades.vue'
+import agendarConsulta from '../components/agendarConsulta.vue'
 
 
 const routes = [
-  { path: '/', name: 'principalNaoLogada', component: principalNaoLogada},
-  { path: '/login', name: 'login', component: LoginItem},
-  { path: '/cadastro', name: 'cadastro', component: CadastroItem},
-  { path: '/posto-saude', name: 'principalLogada', component: principalLogada},
-  { path: '/todas-funcionalidades', name: 'todasFuncionalidades', component: todasFuncionalidades},
-  { path: '/funcionalidades', name: 'todasFuncionalidadesLogada', component: todasFuncionalidadesLogada},
-  { path: '/teste', name: 'teste', component: TesteItem},
-  { path: '/testecadastro', name: 'teste2', component: TesteCadastro},
-  { path: '/agendamento', name: 'agendarCansulta', component: AgendarConsulta},
- 
+  {
+    path: '/',
+    name: 'homePage',
+    component: homePage
+  },
+  {
+    path: '/loginPage',
+    name: 'loginPage',
+    component: loginPage
+  },
+  {
+    path: '/cadastroPage',
+    name: 'cadastroPage',
+    component: cadastroPage
+  },
+  {
+    path: '/funcionalidadesPage',
+    name: 'funcionalidadesPage',
+    component: funcionalidadesPage
+  },
+  {
+    path: '/agendarConsulta',
+    name: 'agendarConsulta',
+    component: agendarConsulta
+  },
 ]
 
 const router = createRouter({

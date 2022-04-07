@@ -3,7 +3,7 @@
   <div class="cabeçalho">
     <form class="form-header" action="#">
       <header>
-        <img class="logo" src="../assets/logoLogin.jpg">
+        <img class="logo" src="../assets/my-logo.png">
         <h1>Posto Saúde Virtual</h1>
       </header>
     </form>
@@ -92,7 +92,7 @@
 
 <script>
 export default {
-  name: "TesteCadastro",
+  name: "cadastroPage",
   data() {
     return {
       deuErro1: false,
