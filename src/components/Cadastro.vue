@@ -23,7 +23,7 @@
     <div class="row" id="img-atendente">
       <form class="form-img" action="#">
         <header>
-          <img class="logo" src="../assets/atendente.jpg">
+          <img class="logo" src="../assets/atendente.png">
             <div class="row" id="atendente-h2">
               <h2>Criar Cadastro neste site</h2>
             </div>
@@ -282,7 +282,4 @@ export default {
     left:15%;
     border-radius: 90px 90px 90px 90px;
   }
-
-  
-
 </style>

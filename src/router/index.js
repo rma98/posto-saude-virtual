@@ -5,7 +5,6 @@ import cadastroPage from '../components/cadastro.vue'
 import funcionalidadesPage from '../components/funcionalidades.vue'
 import agendarConsulta from '../components/agendarConsulta.vue'
 
-
 const routes = [
   {
     path: '/',
@@ -38,5 +37,4 @@ const router = createRouter({
   history: createWebHistory(),
   routes
 })
-
 export default router

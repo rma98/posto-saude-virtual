@@ -96,7 +96,7 @@
             <div class="row" id="atendente">
                 <form class="form-atendente" action="#">
                     <header>
-                        <img class="logo-atendente" src="../assets/atendente.jpg">
+                        <img class="logo-atendente" src="../assets/atendente.png">
                         <div class="row" id="atendente-mensagem">
                             <label>Atenção: Necessita de consulta domiciliar?<i class="fa-solid fa-volume-high" id="sound"></i></label>
                             <label id="pergunta-sim">
@@ -111,7 +111,7 @@
                 <div class="row" id="row-atendente">
                     <form class="form-atendente-escolha" action="#">
                         <header>
-                            <img class="logo-atendente" src="../assets/atendente.jpg">
+                            <img class="logo-atendente" src="../assets/atendente.png">
                             <div class="row" id="atendente-mensagem-escolha">
                                 <label for="">Escolha a melhor data  para você agendar sua consulta<i class="fa-solid fa-volume-high" id="sound"></i></label>
                             </div>

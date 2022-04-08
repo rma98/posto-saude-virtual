@@ -3,7 +3,7 @@
 
   <div class="container-fluid">
     <a class="cabeçalho">
-      <img class="logo" src="../assets/logoLogin.jpg">
+      <img class="logo" src="../assets/my-logo.png">
       Posto Saúde Virtual
     </a>
   </div>
@@ -20,7 +20,7 @@
     <div class="row" id="img-atendente">
       <form class="form-img" action="#">
         <header>
-          <img class="logo" src="../assets/atendente.jpg">
+          <img class="logo" src="../assets/atendente.png">
             <div class="row" id="atendente-h2t">
               <h2>Criar Cadastro neste site</h2>
             </div>

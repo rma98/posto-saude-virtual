@@ -93,7 +93,7 @@
       </nav>  
     </div>
     <div class="corpo-img">
-      <img src="../assets/body-picture.png" id="body-picture">
+      <img src="../assets/body-picture2.png" id="body-picture">
     </div>
     <div class="row">
       <div class="col-3">
