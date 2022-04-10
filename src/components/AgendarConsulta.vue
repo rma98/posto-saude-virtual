@@ -58,7 +58,7 @@
             </form>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" id="first-menu">Iniciar Cadastro</a>
+                <a class="nav-link active" aria-current="page" href="iniciarCadastro" id="first-menu">Iniciar Cadastro</a>
               </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
