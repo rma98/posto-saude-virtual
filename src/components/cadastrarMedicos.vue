@@ -15,13 +15,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="agendarConsulta" id="second-menu"><strong>Agendar Consulta</strong></a>
+                <a class="nav-link active" aria-current="page" href="/" id="second-menu"><strong>Início</strong></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-current="page" href="#" id="seta"><i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-current="page" href="#" id="second-menu"><strong>Casdastrar</strong></a>
+                <a class="nav-link" aria-current="page" href="cadastroPage" id="second-menu"><strong>Casdastro de Usuários</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#" id="seta"><i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#" id="second-menu"><strong>Casdastro de Médicos</strong></a>
               </li>
             </ul>  
           </div>  
@@ -44,60 +50,57 @@
         </div>
         <div class="card-content">
           <div class="card-content-area">
-            <label for="sus">Nº do Cartão do SUS</label>
-            <input type="text" name="cartaoSus" id="sus" autocomplete="off" v-model="NºdoCartãodoSUS">
+            <label for="usuario">Nome</label>
+            <input type="text" id="usuario" autocomplete="off" v-model="Nome">
           </div>
           <div class="card-content-area">
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" autocomplete="off" v-model="CPF">
+            <label for="crm">CRM</label>
+            <input type="text" id="crm" autocomplete="off" v-model="CRM">
           </div>
           <div class="card-content-area">
-            <label for="data">Data de Nascimento</label>
-            <input type="date" name="data" id="data" autocomplete="off" v-model="DatadeNascimento">
+            <label for="especialização">Especialização</label>
+            <input type="text" id="especialização" autocomplete="off" v-model="Especialização">
           </div>
           <div class="card-content-area">
-            <label for="phone">Telefone</label>
-            <input type="tel" name="phone" id="phone" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx" autocomplete="off" v-model="Telefone">
+            <label for="turno">Turno</label>
+            <input type="text" id="turno" autocomplete="off" v-model="Turno">
           </div>
           <div class="card-content-area">
-            <label for="rua">Rua</label>
-            <input type="text" name="rua" id="rua" autocomplete="off" v-model="Rua">
+            <label for="usuario">Email</label>
+            <input type="text" id="usuario" autocomplete="off" v-model="email">
           </div>
           <div class="card-content-area">
-            <label for="cep">CEP</label>
-            <input type="text" name="cep" id="cep" autocomplete="off" v-model="CEP">
+            <label for="password">Senha</label>
+            <input type="password" id="password" autocomplete="off" v-model="senha">
           </div>
           <div class="card-content-area">
-            <label for="numero">Número</label>
-            <input type="text" name="numero" id="numero" autocomplete="off" v-model="Número">
-          </div>
-          <div class="card-content-area">
-            <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro" autocomplete="off" v-model="Bairro">
-          </div>
-          <div class="card-content-area">
-            <label for="complemento">Complemento</label>
-            <input type="text" name="complemento" id="complemento" autocomplete="off" v-model="Complemento">
-          </div>
-          <div class="card-content-area">
-            <label for="referencia">Referência</label>
-            <input type="text" name="referencia" id="referencia" utocomplete="off" v-model="Referência">
+            <label for="password">Confirmação de senha</label>
+            <input type="password" id="password" autocomplete="off" v-model="confirmar">
             <span v-show="deuErro1" class="erro-senha"
               ><i class="fa fa-times"></i>Nenhum dado cadastrado ou Dados
               incopletos</span
             >
+            <span v-show="deuErro" class="erro-senha"
+              ><i class="fa fa-times"></i>As senhas digitadas não conferem</span
+            >
           </div>
+          <div class= "rede">
+            <p>Se preferir, entre com outra rede:</P>
+            <img class="iconeRedes" src="../assets/iconeGoogle.png" >
+            <img class="iconeRedes" src="../assets/icone-circular-facebook.png" >
+          </div>  
         </div>
         <div class="card-footer">
           <button
-            v-on:click="Cadastrar()"
+            :disabled="senha != confirmar"
+            v-on:click="Cadastrar"
             class="btn col-2"
           >
             CADASTRAR
           </button>
         </div>
         <div class="voltar">
-            <router-link to= "agendarConsulta"><img class="seta" src="../assets/seta.png"></router-link>
+            <router-link to= "../"><img class="seta" src="../assets/seta.png"></router-link>
         </div>  
       </form>  
     </div>  
@@ -106,73 +109,64 @@
 
 <script>
 export default {
-  name: "iniciarCadastro",
+  name: "cadastrarMedicos",
   data() {
     return {
       deuErro1: false,
       deuErro: false,
-      NºdoCartãodoSUS: '',
-      CPF: '',
-      DatadeNascimento: '',
-      Telefone: '',
-      Rua: '',
-      CEP: '',
-      Número: '',
-      Bairro: '',
-      Complemento: '',
-      Referência: '',
+      Nome: "",
+      email: "",
+      senha: "",
+      confirmar: "",
+      CRM: "",
+      Especialização: "",
+      Turno: "",
     };
   },
   methods: {
     Cadastrar() {
-        if (
-        this.NºdoCartãodoSUS == "" ||
-        this.NºdoCartãodoSUS == " " ||
-        this.NºdoCartãodoSUS < 3 ||
-        this.CPF == "" ||
-        this.CPF == " " ||
-        this.CPF < 3 ||
-        this.Rua == "" ||
-        this.Rua == " " ||
-        this.Rua < 3 ||
-        this.CEP == "" ||
-        this.CEP == " " ||
-        this.CEP < 3 ||
-        this.Bairro == "" ||
-        this.Bairro == " " ||
-        this.Bairro < 3 ||
-        this.Complemento == "" ||
-        this.Complemento == " " ||
-        this.Complemento < 3 ||
-        this.Referência == "" ||
-        this.Referência == " " ||
-        this.Referência < 3 ||
-        this.DatadeNascimento == "" ||
-        this.Telefone == "" ||
-        this.Número == ""
+      if (
+        this.Nome == "" ||
+        this.Nome == " " ||
+        this.Nome < 3 ||
+        this.CRM == "" ||
+        this.CRM == " " ||
+        this.CRM < 3 ||
+        this.Especialização == "" ||
+        this.Especialização == " " ||
+        this.Especialização < 3 ||
+        this.Turno == "" ||
+        this.Turno == " " ||
+        this.Turno < 3 ||
+        this.email == "" ||
+        this.email == " " ||
+        this.email < 3 ||
+        this.senha == "" ||
+        this.confirmar == ""
       ) {
         this.deuErro1 = true;
-        this.NºdoCartãodoSUS = "";
-        this.CPF = "";
-        this.DatadeNascimento = "";
-        this.Telefone = "";
-        this.Rua = "";
-        this.CEP = "";
-        this.Número = "";
-        this.Bairro = "";
-        this.Complemento = "";
-        this.Referência = "";
+        this.Nome = "";
+        this.CRM = "";
+        this.Especialização = "";
+        this.Turno = "";
+        this.email = "";
+        this.senha = "";
+        this.confirmar = "";
       } else {
-          this.$router.push("agendarConsulta");
+        if (this.senha != this.confirmar) {
+          this.deuErro = true;
+        } else {
+          this.$router.push("funcionalidadesPage");
         }
-    } 
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
 .container {
-  height: 195vh;
+    height: 168vh;
 }
 .cabecalho {
   width: 20vw;
@@ -226,7 +220,7 @@ strong {
   border-radius: 2px;
   border-radius: 50px 50px 50px 50px;
   width: 70vw;
-  height: 165vh;
+  height: 138vh;
 }
 .card-header{
   position: absolute;

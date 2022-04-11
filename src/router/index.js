@@ -5,6 +5,7 @@ import cadastroPage from '../components/cadastro.vue'
 import funcionalidadesPage from '../components/funcionalidades.vue'
 import agendarConsulta from '../components/agendarConsulta.vue'
 import iniciarCadastro from '../components/iniciarCadastro.vue'
+import cadastrarMedicos from '../components/cadastrarMedicos.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/iniciarCadastro',
     name: 'iniciarCadastro',
     component: iniciarCadastro
+  },
+  {
+    path: '/cadastrarMedicos',
+    name: 'cadastrarMedicos',
+    component: cadastrarMedicos
   },
 ]
 
