@@ -20,12 +20,8 @@
               <li class="nav-item">
                 <a class="nav-link disabled" aria-current="page" href="#" id="seta"><i class="fa-solid fa-chevron-right"></i></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="cadastroPage" id="second-menu"><strong>Casdastro de Usuários</strong></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-current="page" href="#" id="seta"><i class="fa-solid fa-chevron-right"></i></a>
-              </li>
+
+             
               <li class="nav-item">
                 <a class="nav-link disabled" aria-current="page" href="#" id="second-menu"><strong>Casdastro de Médicos</strong></a>
               </li>
